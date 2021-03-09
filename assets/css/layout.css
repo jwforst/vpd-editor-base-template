@@ -1,30 +1,14 @@
-
 * {
   box-sizing: border-box;
 }
 
-/* ========================= Notes ========================= */
-/* Grid layout terms:
-    container, column, row, track, line, area, cell, and item. */
-
-/* ===== ===== ===== ===== Semantic tags ===== ===== ===== ===== */
-/* Semantic tags aid developers and user agents like browsers, search engines, screen readers to understand context and meaning of content.
-    <article> <aside> <details> <figcaption> <figure> <footer> <header> <main> <mark> <nav> <section> <summary> <time> */
-
-/* ===== ===== ===== <article> ===== ===== ===== */
-/* Article: Contains a complete, self-contained, topic or story. Able to stand alone.*/
-
-/* ===== ===== ===== <aside> ===== ===== ===== */
-/* Aside: Provides supplimental information indirectly related to the primary topic, for example, background information, or information and access to a product or a service.*/
 aside {
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 1rem;
   color: var(--color-text-s02);
   background-color: var(--color-surface02);
   box-shadow: var(--shadow);
 }
-
-/* ===== ===== ===== <details> ===== ===== ===== */
 
 /* ===== ===== ===== <figcaption> ===== ===== ===== */
 figcaption {
@@ -83,6 +67,19 @@ header {
   box-shadow: var(--shadow);
 }
 
+/* ===== ===== ===== <toolbar> ===== ===== ===== */
+div.toolbar {
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  overflow: hidden;
+  background-color: var(--header-surface);
+  box-shadow: var(--shadow);
+}
+
 /* ===== ===== ===== <div.drawer> ===== ===== ===== */
 div.drawer {
   display: flex;
@@ -129,8 +126,7 @@ main{
   flex-grow: 0;
   flex-shrink: 0;
   margin: 0rem;
-  padding: 0rem;  
-  /* top: 4rem; */
+  padding: 0rem;
   overflow-y: auto;
   background-color: var(--nav-surface);
 }
@@ -276,9 +272,6 @@ main{
   flex-direction: column;
   width: auto;
   padding: 0;
-  border-width: 1px;
-  border-style: none none dotted none;
-  border-color: var(--nav-border-color);
 }
 
 .section-card {
@@ -498,24 +491,25 @@ body {
 .body-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 1fr;
+  grid-template-rows: 4rem 2.5rem 1fr;
   grid-template-areas:
     "head"
-    "main"
+    "toolbar"
+    "drawer"
     "foot";
 }
 
 .main-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2rem 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "tool"
-    "main";
+    "editor-area"
+    "output-area";
 }
 
 /* ===== ===== body media checks ===== ===== */
-/* @media (max-width: 550px) {
+@media (max-width: 550px) {
   .body-grid {
     grid-template-rows: 3.7rem 1fr;
   }
@@ -525,15 +519,18 @@ body {
   .body-grid {
     grid-template-rows: 3.4rem 1fr;
   }
-} */
+}
 
 /* ===== end body ===== */
 
-
-
-
 /* ===== ===== ===== Header divs ===== ===== ===== */
-/* Defines width in percent for the three content areas in the header */
+div.toolbar-area {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-width: 205px;
+}
+
 div.control-area {
   display: flex;
   align-content: center;
