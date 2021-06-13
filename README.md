@@ -1,34 +1,26 @@
-# Viewportdoc Editor Template
+# Viewportdoc Editor Project
 
-This repository is part of a project that is currently under development. The Viewportdoc Editor template is an HTML wrapper for containing an open-source editor for test and evaluation. The rest of this project is contained in private repositories that will be made public at a later time.
+TBD...
 
-The ViewportDoc Project requires creating these applications:
+## ViewportDoc Base Template (used during development)
 
-## VPD Base Template (used during development)
-
-The HTML, CSS, and JavaScript web app that defines the container for the online editor, online viewer, windows editor, and home page.
+The HTML, CSS, and JavaScript web app that defines the container for the ViewportDoc Online Editor, ViewportDoc Desktop Editor, ViewportDoc Online Viewer, and ViewportDoc Web Page
 
 ## ViewportDoc Online Editor (used during development)
 
-The Mobiledoc-based, proof of concept editor that runs in the browser without file storage functionality.
-
-## ViewportDoc Online Viewer  (for future public release)
-
-A view only variation of the online editor.
+The Mobiledoc-based, developmental editor that runs in the browser. This app integrates the Mobiledoc editor features with the controls and functions provided by the ViewportDoc Base Template. File storage functionality will be limited.
 
 ## ViewportDoc Desktop Editor (for future public release)
 
-An electron-wrapped, browser-based mobiledoc-based editor that runs on the desktop computer operating system.
+An electron-wrapped version of the ViewportDoc Online Editor. This app integrates the editor with the the desktop computer operating system and provides local file storage.
+
+## ViewportDoc Online Viewer  (for future public release)
+
+A view-only variation of the online editor. The ViewportDoc Online Viewer provides the means to view read-only Mobiledoc files on mobile devices, tablets, laptop computers and other displays.
 
 ## ViewportDoc Web Page (for future public release)
 
-The public website.
-
-### Features
-
-preliminary features to consider for development.
-
-- ViewportDocs Gallery: Contains content templatates, style templates, other?
+The public website that provides support for the editor.
 
 ## References
 
