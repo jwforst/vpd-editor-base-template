@@ -1,10 +1,4 @@
 
-# This is h1.title Text (Opening Heading)
-
-This is p text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime architecto dolore ad tempora error, cumque, deleniti asperiores dicta adipisci accusantium consequuntur optio labore consectetur.
-
-D:\viewportdoc-editor-toastui\assets\images\seven_viewports.png
-
 # This is h1 text
 
 This is p text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime architecto dolore ad tempora error, cumque, deleniti asperiores dicta adipisci accusantium consequuntur optio labore consectetur.
