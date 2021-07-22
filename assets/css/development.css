@@ -1,11 +1,4 @@
-/* ========================================================================= */
-/* filegroupName: ViewportDocs Framework 001                                 */
-/*                                                                           */
-/* This is a part of a template filegroup. A filegroup contains all HTML,    */
-/* CSS, and JS files needed to create a specific viewport document. Fork     */
-/* this filegroup to create new template filegroups.                         */
-/* ========================================================================= */
-
+/* ===== Deprecated: Use dev-borders.css instead of this file.===== */
 /* These are development styles. This file is useful for temporarilly adding 
 /* borders or background colors to elements during development. Remove these CSS classes and and the link to this file from production html files.        */
 
