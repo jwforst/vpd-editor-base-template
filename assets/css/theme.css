@@ -1,7 +1,7 @@
 /* FONT FAMILIES AND COLOR THEMES */
 
 /* HTML Root Element Classes
-The <html> element in index.html line 3 is the root element where fontFamily0 and colorTheme0 are assigned as fallback classes. */ 
+The <html> element in index.html is the root element where font-family0 and color-theme0 are assigned as fallback classes. */
 
 /* DOM Class List
 JavaScript is used to manage setup and user-selection of font family and theme assignment to the DOM classList. The DOM classList contains The initial startup classes and then the user-selected classes*/
@@ -10,6 +10,14 @@ JavaScript is used to manage setup and user-selection of font family and theme a
 
 /* Headings */
 @font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf),
+  url(../fonts/OpenSans-Italic.ttf),
+  url(../fonts/OpenSans-Bold.ttf),
+  url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
   font-family: "Michroma";
   src: url(../fonts/Michroma-Regular.ttf);
 }
@@ -17,313 +25,330 @@ JavaScript is used to manage setup and user-selection of font family and theme a
 @font-face {
   font-family: "Libre Baskerville";
   src: url(../fonts/LibreBaskerville-Regular.ttf),
-       url(../fonts/LibreBaskerville-Italic.ttf),
-       url(../fonts/LibreBaskerville-Bold.ttf),
-       url(../fonts/LibreBaskerville-BoldItalic.ttf);
+    url(../fonts/LibreBaskerville-Italic.ttf), url(../fonts/LibreBaskerville-Bold.ttf),
+    url(../fonts/LibreBaskerville-BoldItalic.ttf);
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url(../fonts/Philosopher-Regular.ttf),
-       url(../fonts/Philosopher-Italic.ttf),
-       url(../fonts/Philosopher-Bold.ttf),
-       url(../fonts/Philosopher-BoldItalic.ttf);
+  src: url(../fonts/Philosopher-Regular.ttf), url(../fonts/Philosopher-Italic.ttf),
+    url(../fonts/Philosopher-Bold.ttf), url(../fonts/Philosopher-BoldItalic.ttf);
 }
 
 /* Body */
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/Raleway-Regular.ttf),
-       url(../fonts/Raleway-Italic.ttf),
-       url(../fonts/Raleway-Bold.ttf),
-       url(../fonts/Raleway-BoldItalic.ttf);
+  src: url(../fonts/Raleway-Regular.ttf), url(../fonts/Raleway-Italic.ttf),
+    url(../fonts/Raleway-Bold.ttf), url(../fonts/Raleway-BoldItalic.ttf);
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf),
-       url(../fonts/Roboto-Italic.ttf),
-       url(../fonts/Roboto-Bold.ttf),
-       url(../fonts/Roboto-BoldItalic.ttf);
+  src: url(../fonts/Roboto-Regular.ttf), url(../fonts/Roboto-Italic.ttf),
+    url(../fonts/Roboto-Bold.ttf), url(../fonts/Roboto-BoldItalic.ttf);
 }
 
 @font-face {
   font-family: "Libre Franklin";
-  src: url(../fonts/LibreFranklin-Regular.ttf),
-       url(../fonts/LibreFranklin-Italic.ttf),
-       url(../fonts/LibreFranklin-Bold.ttf),
-       url(../fonts/LibreFranklin-BoldItalic.ttf);
+  src: url(../fonts/LibreFranklin-Regular.ttf), url(../fonts/LibreFranklin-Italic.ttf),
+    url(../fonts/LibreFranklin-Bold.ttf), url(../fonts/LibreFranklin-BoldItalic.ttf);
 }
 
 /* Monospace */
 @font-face {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   src: url(../fonts/RobotoMono-VariableFont_wght.ttf),
-       url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);       
+    url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);
 }
 
+/* ==== ==== ==== ==== Font Families ==== ==== ==== ==== */
+/* font-family0 is the default. */
 
-/* FONT FAMILIES
-A fontFamily CSS class assigns three font families, and a default font size. fontFamily0 is the default. */
 .fontFamily0 {
-  --heading-font-family: 'Michroma';
-  --paragraph-font-family: 'Raleway';
-  --mono-font-family: 'Roboto Mono';
+  --heading-font-family: "Open Sans";
+  --paragraph-font-family: "Open Sans";
+  --mono-font-family: "Roboto Mono";
   --root-font-size: 16px;
 }
 
 .fontFamily1 {
-  --heading-font-family: 'Libre Baskerville';
-  --paragraph-font-family: 'Roboto';
-  --mono-font-family: 'Roboto Mono';
+  --heading-font-family: "Michroma";
+  --paragraph-font-family: "Raleway";
+  --mono-font-family: "Roboto Mono";
   --root-font-size: 16px;
 }
 
 .fontFamily2 {
-  --heading-font-family: 'Philosopher';
-  --paragraph-font-family: 'Libre Franklin';
-  --mono-font-family: 'Roboto Mono';
+  --heading-font-family: "Libre Baskerville";
+  --paragraph-font-family: "Roboto";
+  --mono-font-family: "Roboto Mono";
   --root-font-size: 16px;
 }
 
-/* COLOR THEMES
-/* Sunny Gray (colorTheme0 = default) */
-.colorTheme0 {
-  --color-surface01: hsl(0, 0%, 83%);
-  --color-surface02: hsl(0, 0%, 80%);
-  --color-surface03: hsl(0, 0%, 95%);
+.fontFamily3 {
+  --heading-font-family: "Philosopher";
+  --paragraph-font-family: "Libre Franklin";
+  --mono-font-family: "Roboto Mono";
+  --root-font-size: 16px;
+}
 
-  --color-text-s01: black;
-  --color-text-s02: black;
-  --color-text-s03: black;
-
-  --color-h1-h6-s01: hsl(190, 100%, 22%);
-  --color-h1-h6-s02: hsl(190, 100%, 22%);
-  --color-h1-h6-s03: hsl(190, 100%, 22%);
-
-
-  --color-accent01: hsl(190, 100%, 32%);
-  --color-accent02: hsl(188, 100%, 42%);
-  --color-accent03: hsl(188, 100%, 72%);
-
-  --color-text-a01: white;
-  --color-text-a02: black;
-  --color-text-a03: black;
-
-  --color-h1-h6-a01: hsl(188, 100%, 42%);
-  --color-h1-h6-a02: hsl(188, 100%, 12%);
-  --color-h1-h6-a03: hsl(188, 100%, 12%);
-
-  --color-doc-title: hsl(190, 100%, 32%);
-  --border-color: hsl(0, 0%, 90%);
-  --card-border-color: hsl(0, 0%, 40%);
+/* ==== ==== ==== ==== Color Themes ==== ==== ==== ==== */
+/* Sunny Gray*/
+.colorTheme0 {  
+  /* Gray_30 */
+  --color-background-b01: hsl(218, 31%, 90%);
+  --color-border-b01: hsl(0, 0%, 60%);
+  --color-h1-h6-b01: hsl(201, 80%, 18%);
+  --color-text-b01: hsl(0, 0%, 0%);
+  /* Gray_20 */
+  --color-background-b02: hsl(216, 33%, 94%);
+  --color-border-b02: hsl(0, 0%, 60%);
+  --color-h1-h6-b02: hsl(201, 80%, 18%);
+  --color-text-b02: hsl(0, 0%, 0%);
+  --color-button-b02: hsl(218, 31%, 90%);
+  /* Gray_10 */
+  --color-background-b03: hsl(216, 33%, 97%);
+  --color-border-b03: hsl(0, 0%, 60%);
+  --color-h1-h6-b03: hsl(201, 80%, 18%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Gray_30 */
+  --color-background-a01: hsl(218, 31%, 90%);
+  --color-border-a01: hsl(0, 0%, 60%);
+  --color-h1-h6-a01: hsl(201, 80%, 18%);
+  --color-text-a01: hsl(0, 0%, 0%);
 }
 
 /* Stormy Gray */
 .colorTheme1 {
-  --color-surface01: hsl(0, 0%, 50%);
-  --color-surface02: hsl(0, 0%, 60%);
-  --color-surface03: hsl(0, 0%, 90%);
-
-  --color-text-s01: var(--white);
-  --color-text-s02: var(--white);
-  --color-text-s03: var(--black);
-
-  --color-h1-h6-s01: hsl(188, 100%, 12%);
-  --color-h1-h6-s02: black;
-  --color-h1-h6-s03: hsl(188, 100%, 32%);
-
-  --color-accent01: hsl(188, 100%, 22%);
-  --color-accent02: hsl(188, 100%, 32%);
-  --color-accent03: hsl(188, 100%, 42%);
-
-  --color-text-a01: white;
-  --color-text-a02: black;
-  --color-text-a03: black;
-
-  --color-h1-h6-a01: hsl(188, 100%, 42%);
-  ;
-  --color-h1-h6-a02: hsl(188, 100%, 12%);
-  --color-h1-h6-a03: hsl(188, 100%, 12%);
-
-  --color-doc-title: white;
-  --border-color: hsl(0, 0%, 80%);
-  --card-border-color: hsl(0, 0%, 40%);
+  /* Gray_70 */
+  --color-background-b01: hsl(217, 10%, 49%);
+  --color-border-b01: hsl(0, 0%, 40%);
+  --color-h1-h6-b01: hsl(0, 0%, 100%);
+  --color-text-b01: hsl(0, 0%, 100%);
+  /* Gray_60 */
+  --color-background-b02: hsl(217, 15%, 61%);
+  --color-border-b02: hsl(0, 0%, 40%);
+  --color-h1-h6-b02: hsl(204, 38%, 28%);
+  --color-text-b02: hsl(0, 0%, 0%);
+  --color-button-b02: hsl(217, 22%, 74%);
+  /* Gray_20 */
+  --color-background-b03: hsl(216, 33%, 94%);
+  --color-border-b03: hsl(0, 0%, 40%);
+  --color-h1-h6-b03: hsl(204, 38%, 28%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Gray_30 */
+  --color-background-a01: hsl(218, 31%, 90%);
+  --color-border-a01: hsl(0, 0%, 40%);
+  --color-h1-h6-a01: hsl(204, 38%, 28%);
+  --color-text-a01: hsl(0, 0%, 0%);
 }
 
-/* Thunderhead */
+/* Thunderhead*/
 .colorTheme2 {
-  --color-surface01: hsl(199, 28%, 29%);
-  --color-surface02: hsl(200, 18%, 40%);
-  --color-surface03: hsl(200, 25%, 92%);
-
-  --color-text-s01: hsl(0, 0%, 95%);
-  --color-text-s02: hsl(0, 0%, 88%);
-  --color-text-s03: black;
-
-  --color-h1-h6-s01: hsl(199, 28%, 10%);
-  --color-h1-h6-s02: hsl(199, 28%, 10%);
-  --color-h1-h6-s03: hsl(199, 28%, 29%);
-
-  --color-accent01: hsl(188, 100%, 35%);
-  --color-accent02: hsl(188, 100%, 42%);
-  --color-accent03: hsl(188, 100%, 69%);
-
+  /* Slate_80*/
+  --color-background-b01: hsl(204, 38%, 28%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(0, 0%, 100%);
+  --color-text-b01: hsl(0, 0%, 100%);
+  /* Slate_70*/
+  --color-background-b02: hsl(205, 40%, 36%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(0, 0%, 100%);
+  --color-text-b02: hsl(0, 0%, 90%);
+  /* --color-button-b02: hsl(205, 33%, 50%); */
+  --color-button-b02: hsl(205, 33%, 50%);
+  /* Slate_10*/
+  --color-background-b03: hsl(198, 38%, 95%);
+  --color-border-b03: hsl(0, 0%, 20%);
+  --color-h1-h6-b03: hsl(204, 38%, 28%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Slate_50*/
+  --color-background-a01: hsl(205, 42%, 55%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(206, 83%, 72%);
   --color-text-a01: hsl(0, 0%, 100%);
-  --color-text-a02: black;
-  --color-text-a03: black;
+}
 
-  --color-h1-h6-a01: hsl(199, 28%, 10%);
-  --color-h1-h6-a02: hsl(199, 28%, 10%);
-  --color-h1-h6-a03: hsl(199, 28%, 29%);
+ /* Spruce */
+.colorTheme3 {
+  /* Teal_100 */
+  --color-background-b01: hsl(176, 65%, 10%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(33, 88%, 83%);
+  --color-text-b01: hsl(33, 88%, 83%);
+  /* Teal_90 */
+  --color-background-b02: hsl(176, 69%, 14%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(33, 88%, 83%);
+  --color-text-b02: hsl(0, 0%, 90%);
+  --color-button-b02: hsl(169, 28%, 46%);
+  /* Teal_10 */
+  --color-background-b03: hsl(177, 54%, 93%);
+  --color-border-b03: hsl(0, 0%, 10%);
+  --color-h1-h6-b03: hsl(33, 75%, 17%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Teal_30 */
+  --color-background-a01: hsl(169, 28%, 46%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(33, 75%, 17%);
+  --color-text-a01: hsl(0, 0%, 100%);
+}
+/* Bristlecone */
+.colorTheme4 {
+  /* Green_100 */
+  --color-background-b01: hsl(143, 43%, 12%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(33, 88%, 83%);
+  --color-text-b01: hsl(33, 88%, 83%);
+  /* Green_90 */
+  --color-background-b02: hsl(144, 49%, 16%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(33, 88%, 83%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(137, 21%, 53%);
+  /* Green_10 */
+  --color-background-b03: hsl(177, 54%, 93%);
+  --color-border-b03: hsl(0, 0%, 10%);
+  --color-h1-h6-b03: hsl(144, 52%, 21%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Green_30 */
+  --color-background-a01: hsl(144, 57%, 67%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(144, 52%, 21%);
+  --color-text-a01: hsl(0, 0%, 0%);
+}
 
-  --color-doc-title: white;
-  --border-color: hsl(0, 0%, 60%);
-  --card-border-color: hsl(0, 0%, 40%);      
+/* Red Tide */
+.colorTheme5 {
+  /* Red_100 */
+  --color-background-b01: hsl(0, 50%, 18%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(0, 79%, 91%);
+  --color-text-b01: hsl(0, 79%, 91%);
+  /* Red_90 */
+  --color-background-b02: hsl(0, 67%, 24%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(0, 79%, 91%);
+  --color-text-b02: hsl(0, 0%, 90%);
+  --color-button-b02: hsl(0, 9%, 52%);
+  /* Red_10 */
+  --color-background-b03: hsl(0, 50%, 96%);
+  --color-border-b03: hsl(0, 0%, 10%);
+  --color-h1-h6-b03: hsl(0, 67%, 24%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Red_20 */
+  --color-background-a01: hsl(0, 79%, 91%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(0, 67%, 24%);
+  --color-text-a01: hsl(0, 0%, 10%);
+}
+
+/* Bat Cave*/
+.colorTheme6 {
+  /* Custom */
+  --color-background-b01: hsl(200, 20%, 10%);
+  --color-border-b01: hsl(200, 18%, 12%);
+  --color-h1-h6-b01: hsl(6, 80%, 45%);
+  --color-text-b01: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-b02: hsl(200, 20%, 14%);
+  --color-border-b02: hsl(0, 0%, 0%);
+  --color-h1-h6-b02: hsl(6, 80%, 45%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(0, 00%, 40%);
+  /* Custom */
+  --color-background-b03: hsl(200, 20%, 17%);
+  --color-border-b03: hsl(0, 0%, 0%);
+  --color-h1-h6-b03: hsl(6, 80%, 45%);
+  --color-text-b03: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-a01: hsl(200, 20%, 25%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(6, 80%, 45%);
+  --color-text-a01: hsl(0, 0%, 80%);
+}
+/* Radium */
+.colorTheme7 {
+  /* Custom */
+  --color-background-b01: hsl(200, 18%, 12%);
+  --color-border-b01: hsl(0, 0%, 0%);
+  --color-h1-h6-b01: hsl(113, 80%, 45%);
+  --color-text-b01: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-b02: hsl(203, 20%, 16%);
+  --color-border-b02: hsl(0, 0%, 0%);
+  --color-h1-h6-b02: hsl(113, 80%, 45%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(217, 10%, 49%);
+  /* Custom */
+  --color-background-b03: hsl(200, 20%, 21%);
+  --color-border-b03: hsl(0, 0%, 0%);
+  --color-h1-h6-b03: hsl(113, 80%, 45%);
+  --color-text-b03: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-a01: hsl(200, 18%, 25%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(113, 80%, 45%);
+  --color-text-a01: hsl(0, 0%, 80%);
 }
 
 /* Manilla */
-.colorTheme3 {
-  --color-surface01: hsl(29, 17%, 76%);
-  --color-surface02: rgb(242, 223, 207);
-  --color-surface03: rgb(255, 241, 229);
-
-  --color-text-s01: black;
-  --color-text-s02: black;
-  --color-text-s03: black;
-
-  --color-h1-h6-s01: hsl(185, 82%, 28%);
-  --color-h1-h6-s02: hsl(210, 82%, 33%);
-  --color-h1-h6-s03: hsl(340, 82%, 33%);
-
-  --color-accent01: hsl(340, 82%, 33%);
-  --color-accent02: hsl(210, 82%, 33%);
-  --color-accent03: hsl(0, 0%, 2%);
-
-  --color-text-a01: hsl(0, 0%, 100%);
-  --color-text-a02: hsl(0, 0%, 100%);
-  --color-text-a03: hsl(0, 0%, 100%);
-
-  --color-h1-h6-a01: hsl(0, 0%, 100%);
-  --color-h1-h6-a02: hsl(0, 0%, 100%);
-  --color-h1-h6-a03: hsl(0, 0%, 100%);
-
-  --color-doc-title: hsl(340, 82%, 33%);
-  --nav-border-color: hsl(0, 0%, 100%);
-  --card-border-color: hsl(0, 0%, 40%);
+.colorTheme8 {
+  /* Custom */
+  --color-background-b01: hsl(33, 80%, 88%);
+  --color-border-b01: hsl(0, 0%, 60%);
+  --color-h1-h6-b01: hsl(32, 62%, 12%);
+  --color-text-b01: hsl(33, 75%, 17%);
+  /* Custom */
+  --color-background-b02: hsl(33, 80%, 93%);
+  --color-border-b02: hsl(0, 0%, 60%);
+  --color-h1-h6-b02: hsl(32, 62%, 12%);
+  --color-text-b02: hsl(33, 75%, 17%);
+  --color-button-b02: hsl(33, 27%, 74%);
+  /* Custom */
+  --color-background-b03: hsl(33, 80%, 99%);
+  --color-border-b03: hsl(0, 0%, 60%);
+  --color-h1-h6-b03: hsl(32, 62%, 12%);
+  --color-text-b03: hsl(33, 75%, 17%);
+  /* Custom */
+  --color-background-a01: hsl(33, 80%, 93%);
+  --color-border-a01: hsl(0, 0%, 60%);
+  --color-h1-h6-a01: hsl(33, 87%, 22%);
+  --color-text-a01: hsl(33, 96%, 28%);
 }
 
-/* Spruce */
-.colorTheme4 {
-  --color-surface01: hsl(171, 54%, 20%);
-  --color-surface02: hsl(171, 54%, 25%);
-  --color-surface03: hsl(171, 54%, 95%);
-
-  --color-text-s01: white;
-  --color-text-s02: white;
-  --color-text-s03: black;
-
-  --color-h1-h6-s01: hsl(171, 54%, 75%);
-  --color-h1-h6-s02: hsl(171, 54%, 75%);
-  --color-h1-h6-s03: hsl(171, 54%, 10%);
-
-  --color-accent01: hsl(171, 54%, 35%);
-  --color-accent02: hsl(171, 39%, 47%);
-  --color-accent03: hsl(171, 39%, 77%);
-
-  --color-text-a01: white;
-  --color-text-a02: black;
-  --color-text-a03: black;
-
-  --color-h1-h6-a01: hsl(199, 28%, 10%);
-  --color-h1-h6-a02: hsl(199, 28%, 10%);
-  --color-h1-h6-a03: hsl(199, 28%, 20%);
-
-  --color-doc-title: white;
-  --border-color: hsl(0, 0%, 60%);
-  --card-border-color: hsl(0, 0%, 40%);
-}
-
-/* Batcave */
-.colorTheme5 {
-  --color-surface01: hsl(0, 0%, 10%);
-  --color-surface02: hsl(0, 0%, 14%);
-  --color-surface03: hsl(0, 0%, 18%);
-
-  --color-text-s01: hsl(0, 0%, 80%);
-  --color-text-s02: hsl(0, 0%, 80%);
-  --color-text-s03: hsl(0, 0%, 80%);
-
-  --color-h1-h6-s01: hsl(0, 100%, 45%);
-  --color-h1-h6-s02: hsl(0, 100%, 45%);
-  --color-h1-h6-s03: hsl(0, 100%, 45%);;
-
-  --color-accent01: hsl(332, 93%, 52%);
-  --color-accent02: hsl(180, 100%, 30%);
-  --color-accent03: hsl(244, 90%, 65%);
-
-  --color-text-a01: white;
-  --color-text-a02: white;
-  --color-text-a03: white;
-
-  --color-h1-h6-a01: hsl(0, 0%, 80%);
-  --color-h1-h6-a02: hsl(0, 0%, 80%);
-  --color-h1-h6-a03: hsl(0, 0%, 80%);
-
-  --color-doc-title: hsl(0, 100%, 40%);
-  --border-color: hsl(0, 0%, 30%);
-  --card-border-color: hsl(0, 0%, 30%);
-}
-
-/* Radium */
-.colorTheme6 {
-  --color-surface01: hsl(0, 0%, 10%);
-  --color-surface02: hsl(0, 0%, 15%);
-  --color-surface03: hsl(0, 0%, 25%);
-
-  --color-text-s01: hsl(0, 0%, 80%);
-  --color-text-s02: hsl(0, 0%, 80%);
-  --color-text-s03: hsl(0, 0%, 80%);
-
-  --color-h1-h6-s01: hsl(103, 100%, 40%);
-  --color-h1-h6-s02: hsl(103, 100%, 40%);
-  --color-h1-h6-s03: hsl(103, 100%, 40%);
-
-  --color-accent01: hsl(332, 93%, 52%);
-  --color-accent02: hsl(180, 100%, 30%);
-  --color-accent03: hsl(244, 90%, 65%);
-
-  --color-text-a01: white;
-  --color-text-a02: white;
-  --color-text-a03: white;
-
-  --color-h1-h6-a01: hsl(0, 0%, 80%);
-  --color-h1-h6-a02: hsl(0, 0%, 80%);
-  --color-h1-h6-a03: hsl(0, 0%, 80%);
-
-  --color-doc-title: hsl(103, 100%, 40%);
-  --border-color: hsl(0, 0%, 30%);
-  --card-border-color: hsl(0, 0%, 30%);
-}
-
+/* Transfer theme colors to layout elements */
+/* root */
 :root {
-  /* ASSIGNMENT OF COLORS */
-  /* TBD: Descibe color surface colors are assigned to layout elements*/
-  --header-surface: var(--color-surface01);
-  --footer-surface: var(--color-surface01);
 
-  --nav-surface: var(--color-surface02);
-  --aside-surface: var(--color-surface02);
-  --section-surface: var(--color-surface02);
+  --header-background: var(--color-background-b01);
+  --header-border: var(--color-border-b01);
+  --header-h1-h6: var(--color-h1-h6-b01);
+  --header-text: var(--color-text-b01);
 
-  --main-surface: var(--color-surface03);
-  --article-surface: var(--color-surface03);
+  --aside-background: var(--color-background-b02);
+  --aside-border: var(--color-border-b02);
+  --aside-h1-h6: var(--color-h1-h6-b02);
+  --aside-text: var(--color-text-b02);
+  --button-background: var(--color-button-b02);
 
-  --btn-hover: var(--color-surface02);
-  --btn-active: var(--color-surface02);
+  --main-background: var(--color-background-b03);
+  --main-border: var(--color-border-b03);
+  --main-h1-h6: var(--color-h1-h6-b03);
+  --main-text: var(--color-text-b03);
+  
+  --footer-background: var(--color-background-b01);
+  --footer-border: var(--color-border-b01);
+  --footer-h1-h6: var(--color-h1-h6-b01);
+  --footer-text: var(--color-text-b01);
 
-  --link-hover: var(--journey-blue);
-  --link-active: var(--journey-red);
+  --card-background-1: var(--color-background-a01);
+  --card-border-1: var(--color-border-a01);
+  --card-h1-h6-1: var(--color-h1-h6-a01);
+  --card-text-1: var(--color-text-a01);
+
+  /* shadow: h-offset, v-offset, blur, transparent color */
+  --shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.3);
 
   /* grayscale */
   --black: hsl(0, 0%, 0%);
@@ -337,13 +362,4 @@ A fontFamily CSS class assigns three font families, and a default font size. fon
   --gray80: hsl(0, 0%, 80%);
   --gray90: hsl(0, 0%, 90%);
   --white: hsl(0, 0%, 100%);
-
-  /* Journey logo Colors */
-  --journey-red: hsl(0, 100%, 50%);
-  --Journey-blue: hsl(240, 100%, 50%);
-
-  /* shadows */
-  /* shadow: h-offset, v-offset, blur, transparent color */
-  --shadow: 3px 2px 6px hsla(0, 0%, 0%, 0.3);
-  --inverse-shadow: -3px -2px 6px rgba(0, 0, 0, 0.5);
 }

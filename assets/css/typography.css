@@ -1,6 +1,6 @@
 
 
-/* ===== ===== ===== ===== Headings ===== ===== ===== ===== */
+/* ===== ===== ===== Headings ===== ===== =====*/
 h1,
 h2,
 h3,
@@ -9,78 +9,88 @@ h5,
 h6 {
   font-family: var(--heading-font-family);
   font-size: 1rem;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
+  font-style: bold;
   text-align: left;
   line-height: 110%;
   margin: 0rem;
   padding: 0rem;
-  color: var(--color-h1-h6-s03);
+  color: var(--main-h1-h6);
 }
 
-h1 {
-  /* font-size: 1.400rem; */
-  font-size: 1.300rem;
-  font-style: normal;
-  margin: 2rem 0rem 0rem 0rem;
+/* h1 {
+  font-size: 1.4rem;
+  margin: 2rem 0rem 0.75rem 0rem;
+}
+
+h1.title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 2rem 0rem 3rem 0rem;
 }
 
 h2 {
-  /* font-size: 1.171rem; */
   font-size: 1.171rem;
-  font-style: normal;
-  margin: 2rem 0rem 0rem 0.5rem;
+  margin: 2rem 0rem 0.75rem 0.5rem;
 }
 
 h3 {
-  /* font-size: 1.065rem; */
   font-size: 1.065rem;
-  font-style: normal;
-  margin: 2rem 0rem 0rem 1rem;
+  margin: 2rem 0rem 0.75rem 1rem;
   }
 
 h4 {
-  /* font-size: 0.968rem; */
-  font-size: 0.968rem
-  font-style: normal;
-  margin: 2rem 0rem 0rem 1.5rem;
+  font-size: 0.968rem;
+  margin: 2rem 0rem 0.75rem 1.5rem;
 }
 
 h5 {
-  /* font-size: 0.88rem; */
   font-size: 0.880rem;
-  font-style: normal;
-  margin: 2rem 0rem 0rem 2rem;
+  margin: 2rem 0rem 0.75rem 2rem;
 }
 
 h6 {
-  /* font-size: 0.8rem; */
   font-size: 0.800rem;
-  font-style: normal;
-  margin: 2rem 0rem 0rem 2.5rem;
+  margin: 2rem 0rem 0.75rem 2.5rem;
+} */
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem 0rem 0.75rem 0rem;
 }
 
-/* ===== ===== ===== Special Headings ===== ===== ===== */
-h1.doc-title {
-  overflow: hidden;
-  font-size: 1.7rem;
-  font-weight: normal;
-  margin: 0;
-  line-height: 110%;
-  padding: 0.25rem;
+h1.title {
+  font-size: 2rem;
   text-align: center;
-  color: var(--color-doc-title);
+  margin: 2rem 0rem 3rem 0rem;
 }
 
-h1.card-title {
-  font-size: 1.1rem;
-  text-align: center;
-  margin: 0.5rem 0rem 0.5rem 0rem;
-  padding: 0rem 0rem 0rem 0rem;
-  color: var(--color-h1-h6-s02);
+h2 {
+  font-size: 1.7818rem;
+  margin: 2rem 0rem 0.75rem 0.5rem;
 }
 
-/* ===== ===== ===== =====  Body Text ===== ===== ===== ===== */
+h3 {
+  font-size: 1.5874rem;
+  margin: 2rem 0rem 0.75rem 1rem;
+}
+
+h4 {
+  font-size: 1.4142rem;
+  margin: 2rem 0rem 0.75rem 1.5rem;
+}
+
+h5 {
+  font-size: 1.2599rem;
+  margin: 2rem 0rem 0.75rem 2rem;
+}
+
+h6 {
+  font-size: 1.1225rem;
+  margin: 2rem 0rem 0.75rem 2.5rem;
+}
+
+/*  ===== ===== ===== Body Text  ===== ===== ===== */
 caption,
 dd,
 dt,
@@ -103,14 +113,30 @@ ul {
   word-break: normal;
   margin: 0rem;
   padding: 0rem;
-  color: var(--color-text-s03);
+  color: var(--main-text);
 }
 
-p.code {
-  font-family: var(--mono-font-family);
+/* ===== ===== ===== p ===== ===== ===== */
+p {
   margin: 0.25rem 0rem 0.75rem 2.5rem;
   padding: 0rem 0rem 0rem 0rem;
-  color: var(--color-text-s03);
+  color: var(--color-text-b03);
+}
+
+/* ===== ===== ===== code ===== ===== ===== */
+
+code {
+  font-family: var(--mono-font-family);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  line-height: 115%;
+  word-break: normal;
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b03);
 }
 
 /* ===== ===== ===== caption ===== ===== ===== */
@@ -135,7 +161,7 @@ dd.doc-info {
   font-style: normal;
   margin: 0rem 0.5rem 0.5rem 1rem;
   padding: 0rem 0rem 0rem 0rem;
-  color: var(--color-text-s02);
+  color: var(--color-text-b02);
 }
 
 dt.doc-info {
@@ -144,7 +170,7 @@ dt.doc-info {
   font-style: italic;
   margin: 0.5rem 0.5rem 0rem 0.25rem;
   padding: 0rem 0rem 0rem 0rem;
-  color: var(--color-text-s02);
+  color: var(--color-text-b02);
 }
 
 /* ===== ===== ===== label ===== ===== ===== */
@@ -153,8 +179,6 @@ label {
 }
 
 /* ===== ===== ===== links ===== ===== ===== */
-
-
 /*  link */
 a:link {
   text-decoration: none;
@@ -165,7 +189,7 @@ a:visited {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: var(--color-text-s03);
+  color: var(--color-text-b03);
 }
 
 /* mouse over link */
@@ -173,7 +197,7 @@ a:hover {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: var(--color-text-s03);
+  color: var(--color-text-b03);
 }
 
 /* selected link */
@@ -181,143 +205,8 @@ a:active {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: var(--color-text-s03);
+  color: var(--color-text-b03);
 } 
-
-
-/* ===== ===== ===== p ===== ===== ===== */
-p {
-  margin: 0.25rem 0rem 0.75rem 2.5rem;
-  padding: 0rem 0rem 0rem 0rem;
-  color: var(--color-text-s03);
-}
-
-/* use with lighter backgrounds */
-p.text-black {
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem;
-  color: black;
-}
-/* use with lighter backgrounds */
-p.text-white {
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem;
-  color: white;
-}
-
-/* use with color surface01 through surface03 backgrounds */
-p.text-s01,
-p.text-s02,
-p.text-s03 {
-  margin: 0rem;
-  padding: 0rem;
-}
-
-p.text-s01 {
-  color: var(--color-text-s01);
-}
-
-p.text-s02 {
-  color: var(--color-text-s02);
-}
-
-p.text-s03 {
-  color: var(--color-text-s03);
-}
-
-/* use with color accent01 through accent03 backgrounds */
-p.text-a01,
-p.text-a02,
-p.text-a03 {
-  margin: 0rem;
-  padding: 0rem;
-}
-
-p.text-a01 {
-  color: var(--color-text-a01);
-}
-
-p.text-a02 {
-  color: var(--color-text-a02);
-}
-
-p.text-a03 {
-  color: var(--color-text-a03);
-}
-
-/* use with color surface01 through surface03 backgrounds */
-p.heading-s01,
-p.heading-s02,
-p.heading-s03 {
-  margin: 0rem;
-  padding: 0rem;
-}
-
-p.heading-s01 {
-  color: var(--color-h1-h6-s01);
-}
-
-p.heading-s02 {
-  color: var(--color-h1-h6-s02);
-}
-
-p.heading-s03 {
-  color: var(--color-h1-h6-s03);
-}
-
-/* use with color accent01 through accent03 backgrounds */
-p.heading-a01,
-p.heading-a02,
-p.heading-a03 {
-  margin: 0rem;
-  padding: 0rem;
-}
-
-p.heading-a01 {
-  color: var(--color-h1-h6-a01);
-}
-
-p.heading-a02 {
-  color: var(--color-h1-h6-a02);
-}
-
-p.heading-a03 {
-  color: var(--color-h1-h6-a03);
-}
-
-/* ===== ===== p.toc ===== ===== */
-p.toc-1,
-p.toc-2,
-p.toc-3 {
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--color-text-s02);
-}
-
-p.toc-1 {
-  margin: 0.25rem 0.5rem 0.75rem 0.5rem;
-}
-
-p.toc-2 {
-  margin: 0.25rem 0.5rem 0.75rem 1.5rem;
-}
-
-p.toc-3 {
-  margin: 0.25rem 0.5rem 0.75rem 2.5rem;
-}
-
-/* ===== ===== p.showcase===== ===== */
-p.showcase {
-  margin: 0.25rem 0rem 0.75rem 0rem;
-  padding: 0rem 0rem 0rem 0rem;
-}
-
-p.foot-head {
-  line-height: 100%;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem 0rem 0rem 0rem;
-  color: var(--color-text-s01);
-}
 
 /* ol, ul and li*/
 
@@ -353,41 +242,3 @@ details > p {
 /* ===== ===== ===== td, th ===== ===== ===== */
 /* see layout.css "table fonts" for th and td styles*/
 
-/* font size */
-/* Add as a class to any element in the HTML that needs text size adjustment */
-.text-08 {
-  font-size: 0.8rem;
-}
-
-.text-09 {
-  font-size: 0.9rem;
-}
-
-.text-10 {
-  font-size: 1rem;
-}
-
-.text-11 {
-  font-size: 1.1rem;
-}
-
-.text-12 {
-  font-size: 1.2rem;
-}
-
-.text-15 {
-  font-size: 1.5rem;
-}
-
-.text-20 {
-  font-size: 2rem;
-}
-
-/* character emphasis */
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
