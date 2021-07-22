@@ -2,25 +2,25 @@
 
 TBD...
 
-## ViewportDoc Base Template (used during development)
+## ViewportDoc Editor Base Template (used during development)
 
-The HTML, CSS, and JavaScript web app that defines the container for the ViewportDoc Online Editor, ViewportDoc Desktop Editor, ViewportDoc Online Viewer, and ViewportDoc Web Page
+The HTML, CSS, and JavaScript web app that defines the container for the ViewportDoc Online Editor, ViewportDoc Desktop Editor, and ViewportDoc Online Viewer.
 
 ## ViewportDoc Online Editor (used during development)
 
-The Mobiledoc-based, developmental editor that runs in the browser. This app integrates the Mobiledoc editor features with the controls and functions provided by the ViewportDoc Base Template. File storage functionality will be limited.
+The Mobiledoc-based, developmental editor that runs in the browser. This app integrates the Mobiledoc editor features with the controls and functions provided by the ViewportDoc Editor Base Template.
 
 ## ViewportDoc Desktop Editor (for future public release)
 
 An electron-wrapped version of the ViewportDoc Online Editor. This app integrates the editor with the the desktop computer operating system and provides local file storage.
 
-## ViewportDoc Online Viewer  (for future public release)
+## ViewportDoc Online Viewer (for future public release)
 
 A view-only variation of the online editor. The ViewportDoc Online Viewer provides the means to view read-only Mobiledoc files on mobile devices, tablets, laptop computers and other displays.
 
 ## ViewportDoc Web Page (for future public release)
 
-The public website that provides support for the editor.
+The public website that provides access, information, and support for the editor.
 
 ## References
 
