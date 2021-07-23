@@ -13,7 +13,7 @@
     },
     "server": {
       "host": "127.0.0.1",
-      "port": "2370"
+      "port": "2368"
     },
     "scripts": {
         "dev": "gulp",
