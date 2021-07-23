@@ -18,6 +18,10 @@ An electron-wrapped version of the ViewportDoc Online Editor. This app integrate
 
 A view-only variation of the online editor. The ViewportDoc Online Viewer provides the means to view read-only Mobiledoc files on mobile devices, tablets, laptop computers and other displays.
 
+## ghost-vpd-template
+
+A ghost template in the style of the vpd-online-viewer.
+
 ## vpd-project-web-page
 
 The public website that provides access, information, and support for the editor.
