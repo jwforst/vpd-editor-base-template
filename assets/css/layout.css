@@ -13,15 +13,11 @@
 /* ===== ===== ===== body block  ===== ===== ===== */
 .body {
   z-index: 0;
-  max-width: 100vw;
-  height: 100vh;
-  margin: 0;
   overflow: hidden;
-  border-style: solid;
-  border-width: 0px;
   font-size: var(--root-font-size);
-  background-color: var(--gray20);
-  border-color: var(--gray60);
+  background-color: var(--color-background-b02);
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .body--grid {
@@ -33,6 +29,9 @@
     "toolbar"
     "drawer"
     "footer";
+  max-width: 1366px;
+  height: 100vh;
+  box-shadow: var(--shadow-border);
 }
 
 /* ===== ===== ===== header block  ===== ===== ===== */
@@ -48,6 +47,7 @@
   align-content: center;
   background-color: var(--header-background);
   border-color: var(--header-border);
+  border-width: 1px;
 }
 
 .header__title {
@@ -90,7 +90,7 @@
   max-height: 5rem;
   justify-content: flex-start;
   align-content: flex-start;
-  }
+}
 
 .toolbar__btn-group--editor {
   justify-content: flex-start;
@@ -122,35 +122,34 @@
   padding: 6px 6px 22px 6px;
   border-style: solid;
   border-width: 0 1px 0 0;
-  overflow-x: hidden;
+  overflow-y: auto;
   background-color: var(--aside-background);
   border-color: var(--aside-border);
 }
 
 /* slide-in slide-out transition */
 .drawer__aside {
-   /* margin-left: 0px; */
-   transition-property: all;
-   transition-duration: 0.25s;
-   transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
 }
 
-.drawer__aside--z3 {
+.drawer__aside--z3-toc {
   z-index: 3;
   margin-left: -300px;
 }
 
-.drawer__aside--z2 {
+.drawer__aside--z2-info {
   z-index: 2;
   margin-left: -300px;
 }
 
-.drawer__aside--z1 {
+.drawer__aside--z1-templates {
   z-index: 1;
   margin-left: -300px;
 }
 
-.drawer__aside--z0 {
+.drawer__aside--z0-themes {
   z-index: 0;
   margin-left: -300px;
 }
@@ -160,22 +159,61 @@
   width: 100%;
   padding: 0.4rem 0.4rem 1.4rem 0.8rem;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   border-style: solid;
-  border-width: 0;  
+  border-width: 0;
   background-color: var(--main-background);
   border-color: var(--main-border);
+}
+
+/* ===== ===== ===== aside-section block  ===== ===== ===== */
+
+.aside-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.25rem 3rem 0.75rem 0rem;
+}
+
+.aside-section--margin {
+  margin: 0 0 1rem 0;
+}
+
+.aside-section__heading {
+  font-size: 1.065rem;
+  margin: 1rem 0.25rem 0.25rem 0.25rem;
+  text-align: center;
+  color: var(--aside-h1-h6);
+}
+
+.aside-section__text,
+p > a {
+  font-size: 1rem;
+  margin: 0.25rem 0.25rem 0.75rem 0.2rem;
+  text-decoration: none;
+  color: var(--aside-text);
+}
+
+.aside-section--toc-1 {
+  margin-left: 0rem;
+}
+
+.aside-section--toc-2 {
+  margin-left: 1rem;
+}
+
+.aside-section--toc-3 {
+  margin-left: 2rem;
 }
 
 /* ===== ===== ===== footer block  ===== ===== ===== */
 .footer {
   z-index: 0;
   grid-area: footer;
-  min-height: 3rem;
+  max-height: 3rem;
   border-style: solid;
   border-width: 1px 0 1px 0;
   overflow: hidden;
-  background-color: var(--footer-background);
   border-color: var(--footer-border);
 }
 
@@ -184,8 +222,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-   "text-group"
-   "logo-group";
+    "text-group"
+    "logo-group";
 }
 
 .footer__text-group {
@@ -232,45 +270,22 @@
   width: auto;
   margin: 0.25rem 3rem 0.75rem 2.5rem;
   border-radius: 10px;
-  background-color: var(--color-background-a01);
-  border: 1px solid var(--color-border-a01);
+  background-color: var(--card-background-1);
+  border: 1px solid var(--card-border-1);
   box-shadow: var(--shadow);
 }
 
 .card-main__heading {
   font-size: 1.065rem;
   margin: 0.25rem 1rem 0.25rem 1rem;
-  color: var(--color-h1-h6-a01);
+  color: var(--card-h1-h6-1);
 }
 
 .card-main__text {
   font-size: 1rem;
   margin: 0.25rem 1rem 0.25rem 1rem;
   padding: 0;
-  color: var(--color-text-a01);
-}
-
-/* ===== ===== ===== card-aside block  ===== ===== ===== */
-/* Styles for use in the aside block */
-
-.card-aside {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0.25rem 3rem 0.75rem 0rem;
-}
-
-.card-aside__heading {
-  font-size: 1.065rem;
-  margin: 0.25rem 0.25rem 0.5rem 0.25rem;
-  color: var(--color-h1-h6-b02)
-}
-
-.card-aside__text {
-  font-size: 1rem;
-  margin: 0.25rem 0.25rem 0.75rem 0.25rem;
-  padding: 0;
-  color: var(--color-text-b02)
+  color: var(--card-text-1);
 }
 
 /* ===== ===== ===== section block  ===== ===== ===== */
@@ -278,17 +293,23 @@
 .section {
   margin: 0 0rem 0.75rem 0;
   padding: 0px;
-  border: 1px solid var(--color-border-b01);
+  border: 1px solid var(--card-border-1);
+}
+
+/* ===== ===== ===== ===== Images ===== ===== ===== ===== */
+img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
 }
 
 /* ===== ===== ===== media queries  ===== ===== ===== */
 @media (max-width: 994px) {
   .drawer {
-    margin-left: 0px; 
+    margin-left: 0px;
   }
 
   .toolbar--grid {
     grid-template-columns: 150px auto;
   }
 }
-

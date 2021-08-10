@@ -1,7 +1,7 @@
 {
     "name": "vpd-editor-base-template",
-    "description": "ViewportDocs editor base template used with ",
-    "version": "0.3.0",
+    "description": "ViewportDocs editor base template used as a foundation for containing the Mobiledoc editor",
+    "version": "3.0.0",
     "engines": {
       "ghost": ">=4.0.0",
       "ghost-api": "v4"
