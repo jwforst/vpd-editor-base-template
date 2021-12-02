@@ -2,7 +2,6 @@
 <html lang="en" id="rootElement" class="font-family0 color-theme0">
 
 <!-- {{> head }} -->
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +16,6 @@
 </head>
 
 <!-- body -->
-
 <body class="body body--grid">
 
   <!-- {{> header }} -->
@@ -26,9 +24,9 @@
   </header>
 
   <!-- {{> toolbar }} -->
-  <div class="toolbar toolbar--grid" id="toolbar">
-    <!-- system controls -->
-    <div class="toolbar__btn-group toolbar__btn-group--system" id="system">
+  <div class="toolbar toolbar--grid b2 d r" id="toolbar">
+    <!-- ==================== system controls ==================== -->
+    <div class="toolbar__btn-group toolbar__btn-group--system b2 d g" id="systemBtns">
       <!-- table of contents -->
       <button class="toolbar__btn" onclick="asideZ3BtnClick()" id="asideZ3Btn">
         <img src="./assets/icons/icon-menu-24px-vpd.svg" title="Table of Contents" />
@@ -50,59 +48,63 @@
         <img src="./assets/icons/icon-settings-24px-vpd.svg" title="Fonts and Colors" />
       </button>
     </div>
+    <!-- ==================== end system controls ==================== -->
 
-    <!-- editor controls -->
-    <div class="toolbar__btn-group toolbar__btn-group--editor" id="editorBtns">
-      <button class="toolbar__btn" data-action="toggleSection" data-args="h1">
+    <!-- ==================== editor controls ==================== -->
+    <div class="toolbar__btn-group toolbar__btn-group--editor b2 d y" id="editorBtns">
+      <button class="toolbar__btn" onclick="toggleSectionBtn()" data-action="toggleSection" data-args="h1">
         <img src="./assets/icons/icon-H1-24px-vpd.svg" title="Heading 1" />
       </button>
+      <!-- temp from mobiledoc-->
+      <button data-action='toggleSection' data-args='h1'>H1</button>
+      <!-- end temp -->
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="h2">
+      <button class="toolbar__btn" onclick="toggleSectionBtn()" data-action="toggleSection" data-args="h2">
         <img src="./assets/icons/icon-H2-24px-vpd.svg" title="Heading 2" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="h3">
+      <button class="toolbar__btn" onclick="toggleSectionBtn()" data-action="toggleSection" data-args="h3">
         <img src="./assets/icons/icon-H3-24px-vpd.svg" title="Heading 3" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="h4">
+      <button class="toolbar__btn" onclick="toggleSectionBtn()" data-action="toggleSection" data-args="h4">
         <img src="./assets/icons/icon-H4-24px-vpd.svg" title="Heading 4" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="h5">
+      <button class="toolbar__btn" onclick="toggleSectionBtn()" data-action="toggleSection" data-args="h5">
         <img src="./assets/icons/icon-H5-24px-vpd.svg" title="Heading 5" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="h6">
+      <button class="toolbar__btn" onclick="toggleSectionBtn()" data-action="toggleSection" data-args="h6">
         <img src="./assets/icons/icon-H6-24px-vpd.svg" title="Heading 6" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="hI">
+      <button class="toolbar__btn" onclick="setAttributeBtn()" data-action="toggleSection" data-args="hI">
         <img src="./assets/icons/icon-H-inline-24px-vpd.svg" title="Heading Inline" />
       </button>
 
-      <button class="toolbar__btn" data-action="setAttribute"
+      <button class="toolbar__btn" onclick="SetAttributeBtn()" data-action="setAttribute"
         data-args="text-align, center">
         <img src="./assets/icons/icon-title-24px-vpd.svg" title="Title Centered" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleMarkup" data-args="I">
+      <button class="toolbar__btn" onclick="toggleMarkupBtn()" data-action="toggleMarkup" data-args="I">
         <img src="./assets/icons/icon-I-emphasis-24px-vpd.svg" title="Emphasis" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleMarkup" data-args="B">
+      <button class="toolbar__btn" onclick="toggleMarkupBtn()" data-action="toggleMarkup" data-args="B">
         <img src="./assets/icons/icon-B-strong-24px-vpd.svg" title="Strong" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleMarkup" data-args="L">
+      <button class="toolbar__btn" onclick="toggleMarkupBtn()" data-action="toggleMarkup" data-args="L">
         <img src="./assets/icons/icon-link-24px-vpd.svg" title="Hyperlink" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="Tb">
+      <button class="toolbar__btn" onclick="setAttributeBtn()" data-action="toggleSection" data-args="Tb">
         <img src="./assets/icons/icon-table-24px-vpd.svg" title="Table" />
       </button>
 
-      <button class="toolbar__btn" data-action="toggleSection" data-args="cB">
+      <button class="toolbar__btn" onclick="setAttributeupBtn()" data-action="toggleSection" data-args="cB">
         <img src="./assets/icons/icon-code-block-24px-vpd.svg" title="codeBlock" />
       </button>
 
@@ -138,7 +140,7 @@
         <img src="./assets/icons/icon-block-quote-24px-vpd.svg" title="Block Quote" />
       </button>
     </div>
-    <!-- end editor controls -->
+    <!-- ==================== end editor controls ==================== -->
   </div>
 
   <!-- {{> drawer-full }} -->
@@ -409,62 +411,8 @@
     </aside>
 
     <!-- ==== ==== ==== ==== main ==== ==== ==== ==== -->
-    <main class="drawer__main" id="">
-
-      <!-- {{{body}}} -->
-      <h1 class="">This is Heading h1</h1>
-
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci sem, interdum
-        id rhoncus condimentum, vehicula nec leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae.
-      </p>
-
-      <h2 class="">This is Heading h2</h2>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci sem, interdum
-        id rhoncus condimentum, vehicula nec leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae.
-      </p>
-
-      <h3 class="">This is Heading h3</h3>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci sem, interdum
-        id rhoncus condimentum, vehicula nec leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae.
-      </p>
-
-      <h4 class="">This is Heading h4</h4>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci sem, interdum
-        id rhoncus condimentum, vehicula nec leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae.
-      </p>
-
-      <h5 class="">This is Heading h5</h5>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci sem, interdum
-        id rhoncus condimentum, vehicula nec leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae.
-      </p>
-
-      <h6 class="">This is Heading h6</h6>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci sem, interdum
-        id rhoncus condimentum, vehicula nec leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae.
-      </p>
-
-      <h1 class="">Inline Styles</h1>
-      <p class="">
-        Lorem ipsum dolor sit amet. This is a link to <a class=""
-          href="https://viewportdocs.com/">ViewportDocs</a>.
-        Consectetur adipiscing elit. Nunc orci sem, interdum id rhoncus condimentum,
-        vehicula nec leo. <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae.
-      </p>
-
+    <main class="drawer__main b2 d r" id="">
+      <div class="b2 d b" id="editor">X</div>
     </main>
 
   </div>

@@ -120,6 +120,36 @@ function asideZ3BtnClick() {
   }
 }
 
+// EDITOR CONTROL BUTTON SETUP
+//
+function toggleSectionBtn() {
+  let action = button.getAttribute("data-action");
+  let toggle = button.getAttribute("data-toggle");
+  editor[action](toggle);
+}
+
+
+//
+document.querySelectorAll("#editorBtns button.toggle").forEach((button) => {
+  button.addEventListener("click", () => {
+    let action = button.getAttribute("data-action");
+    let toggle = button.getAttribute("data-toggle");
+
+    editor[action](toggle);
+  });
+});
+
+function activateButtons(parentSelector, editor) {
+  document.querySelectorAll(`${parentSelector} button`).forEach((button) =>
+    button.addEventListener("click", () => {
+      const action = button.getAttribute("data-action");
+      const args = button.getAttribute("data-args").split(",");
+
+      editor[action](...args);
+    })
+  );
+}
+
 // MANAGE PERSISTENT STORAGE, FONT FAMILY AND COLOR THEME
 // COLOR THEME & FONT FAMILY MANAGEMENT OVERVIEW ===== ===== ===== ===== =====
 // Data stored in the browser localStorage remains valid and accessible across browser sessions. For this reason, initial startup values, and user-selected default values for the color theme and the font family are stored in localStorage which is persistent.
